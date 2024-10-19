@@ -5,6 +5,7 @@ This is a C-based packet capture tool that allows users to select a network inte
 ## Features
 - Choose network interface
 - Capture all traffic, HTTP only, or TCP only
+- Save captured packets to a file with timestamps
 - Filters based on user selection
 
 ## How to Run
