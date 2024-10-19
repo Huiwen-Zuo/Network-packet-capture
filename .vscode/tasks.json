@@ -7,17 +7,17 @@
 			"command": "C:/msys64/ucrt64/bin/gcc.exe",
 			"args": [
 				"-fdiagnostics-color=always",
-				"-g",                        // Enables debugging information
-				"${file}",                   // The source file to compile
-				"-lwpcap",                   // Link with the wpcap library (Npcap)
-				"-lws2_32",                  // Link with Winsock library (WS2_32)
-				"-IC:/NpcapSDK/Include",     // Path to pcap.h
-				"-LC:/NpcapSDK/Lib/x64",     // Path to 64-bit wpcap.lib
+				"-g",                        
+				"${file}",                   
+				"-lwpcap",                   
+				"-lws2_32",                  
+				"-IC:/NpcapSDK/Include",     
+				"-LC:/NpcapSDK/Lib/x64",    
 				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}.exe"  // Output executable name
+				"${fileDirname}/${fileBasenameNoExtension}.exe"  
 			],
 			"options": {
-				"cwd": "${workspaceFolder}"  // Working directory (can be the workspace root)
+				"cwd": "${workspaceFolder}"  
 			},
 			"problemMatcher": [
 				"$gcc"
